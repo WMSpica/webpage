@@ -1,0 +1,429 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+	
+	font-family: Calibri, nans-serif;
+}
+
+.header{
+	border: 3px solid red;
+	
+}
+.column{
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.page .column{
+	height: 100vh;
+}
+
+#logo-i-social{
+	display: flex;
+}
+
+#logo-holder{
+	text-decoration: none;
+	flex-grow: 1;
+}
+
+#logo-holder img {
+	margin: 5px;
+	height: 35px;
+	width: 70px;
+}
+
+#social-holder{
+	flex-grow: 1;
+	text-align: right;
+}
+
+#social-holder a {
+	text-decoration: none;
+}
+
+#social-holder a img {
+	height: 24px;
+	width: 24px;
+	margin: 5px;
+}
+
+#main-menu {
+	display: flex;
+	padding: 10px;
+}
+
+#main-menu a{
+	flex-grow: 1;
+	text-align: center;
+	display: block;
+	padding: 10px 0px;
+	text-decoration: none;
+	color: red;	
+	transition: 250ms;
+	border-bottom: 1px solid red;
+}
+
+#main-menu a:hover{
+	background: red;
+	color: white;
+}
+
+#main-menu a:hover,
+#main-menu a.active {
+	background: red;
+	color: white;
+}
+
+#pocetna  {
+	text-align: center;
+	color: black;
+	background-image: url('C:/Users/wmladen/Desktop/Vezba/pozadina1.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	padding-top: 55px;
+}
+
+.dark-box h1 {
+	font-size: 52px;
+	padding-top: calc(50vh - 300px);
+}
+
+.dark-box {
+	background-color: #99999945;
+	border: 1px solid white;
+	font-size: 32px;
+	padding: 40px;
+}
+
+#usluge  {
+	background-image: url('C:/Users/wmladen/Desktop/Vezba/pozadina2.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#karijera  {
+	background-image: url('C:/Users/wmladen/Desktop/Vezba/pozadina3.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.align-center{
+	text-align: center;
+	font-size: 18px;
+	
+}
+
+#o-nama h2{
+	text-align: center;
+	font-size: 48px;
+
+}
+
+.krugovi{
+	display: flex;
+	margin: 40px 0;
+}
+
+.krug-holder{
+	flex-grow: 1;
+	
+}
+
+.krug{
+	background: red;
+	color: white;
+	font-size: 44px;
+	width: 50px;
+	height: 50px;
+	font-weight: bold;
+	border-radius: 50%;
+	display: inline-block;
+	padding: 25%;
+}
+
+.oznaka{
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.tehnologije{
+	display: flex;
+	margin: 40px 0;
+
+}
+
+.tehnologija{
+	flex-grow: 1;
+	text-align: center;
+}
+
+.tehnologija img{
+	width: 40px;
+	height: 40px;
+}
+
+.tehnologija p {
+	font-weight: bold;
+	color: #3399ff;
+}
+
+#usluge{
+	color: white;
+}
+
+#usluge h2{
+	padding-top: 40px;
+	font-size: 48px;
+}
+
+.align-center-p{
+	font-size: 24px;
+	text-align:center;
+}
+
+.servisi-polja{
+	display: flex;
+	margin-bottom: 30px;
+	justify-content: space-between;
+}
+
+.servisi-polja > div{
+	text-align: center;
+	position: relative;
+	width: 300px;
+	height: 150px;
+	border: 1px solid white;
+}
+
+.servisi-polja > div > img{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 300px;
+	height: 150px;
+	
+}
+
+.servisi-polja > div > p{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px;
+	background-color: #ffffffB6;
+	margin-bottom: 0px;
+	color: black;
+	font-weight: bold;
+	border: 1px solid white;
+
+}
+
+#proizvodi h2 {
+	padding-top: 40px;
+	text-align: center;
+	font-size: 48px;
+}
+
+.matrica {
+	margin-top: 40px;
+	height: 500px;
+	display: grid;
+	grid-template: "a b c"
+				   "d b e"
+				   "f f g";
+	align-content: space-between;
+	justify-content: space-between;
+}
+
+#proizvod-a {
+	grid-area: a;
+}
+
+#proizvod-b {
+	grid-area: b;
+}
+
+#proizvod-c {
+	grid-area: c;
+}
+
+#proizvod-d {
+	grid-area: d;
+}
+
+#proizvod-e {
+	grid-area: e;
+}
+
+#proizvod-f {
+	grid-area: f;
+}
+
+#proizvod-g {
+	grid-area: g;
+}
+
+.proizvod {
+	display: grid;
+	grid-template: "region";
+	align-content: stretch;
+	justify-content: stretch;
+}
+
+.proizvod img {
+	grid-area: region;
+	justify-self: stretch;
+	align-self: stretch;
+}
+
+.proizvod .text-holder{
+	grid-area: region;
+	justify-self: stretch;
+	align-self: stretch;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	background-color: #ffffffB6;
+	opacity: 0.0;
+	transition: 350ms;
+}
+
+.proizvod:hover .text-holder{
+	opacity: 1.0;
+}
+
+#karijera h2{
+	padding-top: 40px;
+	text-align: center;
+	color: white;
+	font-size: 48px;
+}
+.opis-posla h3{
+	text-align: center;
+	padding-top: 20px;
+}
+
+.karijera-kolona{
+	display: flex;
+}
+
+.lista-poslova{
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.opis-poslova{
+	flex-grow: 2;
+	flex-basis: 0;
+}
+
+.lista-poslova label{
+	display: block;
+	margin-bottom: 10px;
+	border: 1px solid white;
+	background-color: #ffffffB6;
+	padding: 5px;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.opis-poslova input{
+	display: none;
+}
+
+.opis-poslova .opis-posla{
+	display: none;
+}
+
+.opis-poslova input:checked+.opis-posla{
+	display: block;
+}
+
+.opis-posla {
+	margin-left: 10px;
+	border: 1px solid white;
+	background-color: #ffffffB6;
+	padding: 5px;
+	font-size: 18px;
+}
+
+#kontakt h2{
+	margin-top: 70px;
+	margin-bottom: 40px;
+	text-align: center;
+	font-size: 48px;
+}
+
+.kontakt-region h3{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.kontakt-region{
+	display: grid;
+	grid-template: "adresa mapa"
+				   "mail   mapa";
+	grid-template: 300px 1fr;
+}
+
+.kontakt-adresa{
+	grid-area: adresa;
+}
+
+.kontakt-mail{
+	grid-area: mail;
+}
+
+.kontakt-mapa{
+	grid-area: mapa;
+}
+
+.footer .column{
+	display: flex;
+}
+
+.footer{
+	border-top: 2px solid red;
+	font-size: 18px;
+}
+
+.footer .footer-kolona{
+	flex-grow: 1;
+	flex-basis: 0;
+	font-size: 18px;
+	padding-top: 20px;
+	padding-bottom: 70px;
+}
+
+.align-left{
+	text-align: left;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.link-style{
+	text-decoration: none;
+	color: #160960;
+}
+
+.link-style:hover{
+	text-decoration: underline;
+}
+
+
+
